@@ -1,0 +1,8 @@
+/.idea
+/dist/
+/node_modules/
+/release/
+/src/Config/
+/src/Assets/
+yarn.lock
+yarn-error.log

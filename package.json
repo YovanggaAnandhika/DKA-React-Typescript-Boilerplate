@@ -1,0 +1,49 @@
+{
+  "name": "dka-react-typescript-boilerplate",
+  "version": "1.0.0",
+  "homepage": ".",
+  "main": "dist/Main/index.js",
+  "description": "DKA Parking Admin",
+  "license": "MIT",
+  "author": {
+    "name": "Yovangga Anandhika",
+    "email": "dka.tech.dev@gmail.com"
+  },
+  "copyright": "Copyright © 2024 DKA Research Center.Inc",
+  "scripts": {
+    "main:build": "tsc --build",
+    "renderer:cp": "tscp",
+    "dist:clean" : "rimraf dist",
+    "renderer:build": "ts-node src/react.compile.ts",
+    "electron:build": "ts-node electron.builder.ts",
+    "electron:run": "electron .",
+    "start": "yarn run dist:clean && yarn run main:build && yarn run renderer:cp && yarn run renderer:build && yarn run electron:run",
+    "build": "yarn run dist:clean && yarn run main:build && yarn run renderer:cp && yarn run renderer:build && yarn run electron:build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "concurrently": "^8.2.2",
+    "electron": "^28.1.4",
+    "electron-builder": "^24.9.1",
+    "electron-reload": "^2.0.0-alpha.1",
+    "electroner": "^4.0.9",
+    "javascript-obfuscator": "^4.1.0",
+    "node-watch": "^0.7.4",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.3.3",
+    "typescript-cp": "^0.1.9",
+    "webpack-obfuscator": "^3.5.1"
+  },
+  "dependencies": {
+    "@dkaframework/server": "^1.0.270",
+    "electron-alert": "^0.1.20",
+    "electron-is-packaged": "^1.0.2",
+    "electron-unhandled": "^4.0.1",
+    "error-to-json": "^2.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "winston": "^3.11.0"
+  }
+}
