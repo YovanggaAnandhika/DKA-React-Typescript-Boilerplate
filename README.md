@@ -18,7 +18,7 @@ cd your-project-name
 npm install or yarn install
 ```
 
-**Having issues installing? See our [debugging guide](https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues/400)**
+**Having issues installing? See our [debugging guide](https://github.com/YovanggaAnandhika/DKA-React-Typescript-Boilerplate/issue)**
 
 ## Starting Development
 
